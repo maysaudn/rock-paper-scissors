@@ -5,7 +5,7 @@ VERSION 2 - rps-ui
 
 In our UI, the player should be able to play the game by clicking buttons, one for each selection. Refer to the following requirements: 
 
-[X] Add an event listener to the buttons that call the "playRound" function with the correct playerSelection every time a button is clicked
+[x] Add an event listener to the buttons that call the "playRound" function with the correct playerSelection every time a button is clicked
 
 [x] Add a div element for displaying results
 
@@ -13,4 +13,4 @@ In our UI, the player should be able to play the game by clicking buttons, one f
 
 [X] Display the running score
 
-[] Announce a winner of the game once one player reaches 5 points
+[x] Announce a winner of the game once one player reaches 5 points
