@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 5bc9202323ef6cbe08cd853350082e3860c93f6a Nebal <nmaysaud@gmail.com> 1626974000 -0400	clone: from github.com:maysaudn/rock-paper-scissors.git
+5bc9202323ef6cbe08cd853350082e3860c93f6a 2b94167fe027f9345327cdedae41086f55b9accd Nebal <nmaysaud@gmail.com> 1626974211 -0400	commit: add html and javascript files
+2b94167fe027f9345327cdedae41086f55b9accd 1911c624e3b1b48248bb46776fb8353b93e3bd85 Nebal <nmaysaud@gmail.com> 1626978618 -0400	commit: met first 6 requirements in the readme
+1911c624e3b1b48248bb46776fb8353b93e3bd85 c3f025faa888c8da701d633678b830791aa9880c Nebal <nmaysaud@gmail.com> 1627012368 -0400	commit: create game that plays five rounds. Has an error that sets gameRoundResult to true when it should be false
