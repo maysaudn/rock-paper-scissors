@@ -1,5 +1,3 @@
-// It should have a function called "computerPlay" that will randomly return either "Rock', "Paper", or "Scissors".
-
 const rockPaperScissors = ["Rock", "Paper", "Scissors"]
 
 container = document.getElementById("buttons");
@@ -15,6 +13,10 @@ divElement.innerText = "";
 main.appendChild(divElement);
 
 divElement.innerText = "";
+
+let scoreDiv = document.createElement("div");
+scoreDiv.innerText = "";
+main.appendChild(scoreDiv);
 
 function computerPlay() {
     return rockPaperScissors[Math.floor(Math.random()*rockPaperScissors.length)];
@@ -37,7 +39,7 @@ function gameRound(e) {
     playerSelectionInTitleCase === "Paper" && computerSelection === "Rock" || 
     playerSelectionInTitleCase === "Scissors" && computerSelection === "Paper") {
         divElement.innerText = "You win! " + playerSelectionInTitleCase + " beats " + computerSelection;
-        console.log(divElement.innerText);
+        console.log(divElement.innerText)
         playerScore++; 
 
     } else if (playerSelectionInTitleCase === "Rock" && computerSelection === "Paper" || 
@@ -54,15 +56,26 @@ function gameRound(e) {
 
     console.log(playerScore);
     console.log(computerScore);
+
+    if (playerScore === 5) {
+        scoreDiv.innerText = "You Win!"
+        playerScore = 0;
+        computerScore = 0;
+    } else if (computerScore === 5) {
+        scoreDiv.innerText = "You lose!"
+        playerScore = 0;
+        computerScore = 0;
+    } else {
+        scoreDiv.innerText = "player score = " + playerScore + " computer score = " + computerScore;
+    }
 }
 
-let scoreDiv = document.createElement("div");
-scoreDiv.innerText = "player score = " + playerScore + " computer score = " + computerScore;
-main.appendChild(scoreDiv);
+
+
+
+
 
 // function game() {
-//     // Create a variable that keeps score
-//     score = 0;
 
 //     let gameRoundResult = gameRound();
 
